@@ -74,6 +74,12 @@
   text-transform: uppercase;
   background: rgba(15, 15, 15, 1);
   color: rgba(150, 150, 150, 1);
+  transition: 1s;
+}
+
+.like-btn:hover {
+  background: rgba(31, 31, 31, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .shah-btn {
@@ -88,6 +94,12 @@
   text-transform: uppercase;
   background: rgba(15, 15, 15, 1);
   color: rgba(150, 150, 150, 1);
+  transition: 1s;
+}
+
+.shah-btn:hover {
+  background: rgba(31, 31, 31, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .sett-btn {
@@ -102,6 +114,12 @@
   text-transform: uppercase;
   background: rgba(15, 15, 15, 1);
   color: rgba(150, 150, 150, 1);
+  transition: 1s;
+}
+
+.sett-btn:hover {
+  background: rgba(31, 31, 31, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .sel {
@@ -407,7 +425,7 @@ footer {
   margin: 40px auto 10px;
 }
 
-.footer-wrapper{
+.footer-wrapper {
   justify-content: center;
   display: flex;
   gap: 30px;
