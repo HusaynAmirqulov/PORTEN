@@ -20,6 +20,21 @@
 
 /* nav1 */
 
+.containernav {
+  width: 100%;
+  max-width: 1910px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  /* margin: 0 auto;
+  max-width: 1880px; */
+  background: rgba(0, 0, 0, 1);
+
+  color: rgba(150, 150, 150, 1);
+}
+
 .nav-header1 {
   background: rgba(0, 0, 0, 1);
   color: rgba(150, 150, 150, 1);
@@ -139,7 +154,7 @@
 
 section {
   width: 100%;
-  max-width: 1890px;
+  max-width: 1880px;
   margin: 0 auto;
   background-image: url("../images/Rectangle\ 3.png");
   background-repeat: no-repeat;
@@ -757,6 +772,11 @@ footer {
   max-width: 100%;
   /* padding: 0 15px; */
   margin: 0 auto;
+}
+
+.container-full {
+  max-width: 1920px;
+  padding: 0 20px;
 }
 
 @media (max-width: 1200px) {
