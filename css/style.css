@@ -12,8 +12,10 @@
 */
 
 .container {
-  width: 1510px;
+  width: 100%;
+  max-width: 1510px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* nav1 */
@@ -136,24 +138,28 @@
 /* section */
 
 section {
-  width: 1920px;
+  width: 100%;
+  max-width: 1890px;
   margin: 0 auto;
   background-image: url("../images/Rectangle\ 3.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 810px;
-  padding: 160px 0 0;
+  padding: 160px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .porten-adress {
   text-align: center;
-  padding: 120px 0;
-  margin: 0px auto 80px;
+  padding: 80px 0;
+  margin: 0 auto 40px;
   width: 320px;
   height: 320px;
-  border-width: 0px, 0px, 0px, 0px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
 }
 
 .porten-hr {
@@ -173,33 +179,38 @@ section {
 }
 
 .porten-p {
-  width: 730px;
   font-family: PT Sans;
-  font-weight: 400;
+  width: 80%;
+  max-width: 730px;
   font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0%;
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: white;
 }
 
 /* season */
 
 .container-full {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
 .season__collection {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .season {
   background: rgba(0, 0, 0, 1);
-  width: 960px;
+  width: 50%;
   height: 730px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .season-title {
@@ -223,12 +234,15 @@ section {
 .season-wrapper {
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 46px;
 }
 
 .s-card {
-  width: 240px;
+  /* width: 240px; */
   height: 426px;
+  padding: 10px;
+  max-width: 240px;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -259,8 +273,14 @@ section {
 
 .collection {
   background-image: url("../images/Rectangle\ 8.png");
-  width: 960px;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
   height: 730px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .collection-title {
@@ -431,5 +451,529 @@ footer {
 .footer-wrapper {
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 30px;
+}
+
+@media (min-width: 1440px) {
+  .footer-wrapper {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+  .sel {
+    margin-left: 40px;
+  }
+  .sear {
+    margin-left: 30px;
+  }
+  .like-btn,
+  .shah-btn,
+  .sett-btn {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+  .nav1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nav2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav2-desc {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .like-btn,
+  .shah-btn,
+  .sett-btn {
+    height: 60px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .sel,
+  .sear {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+  }
+  .season,
+  .collection {
+    height: 650px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-h2 {
+    font-size: 32px;
+  }
+  .footer-wrapper {
+    gap: 20px;
+  }
+  .footer-img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .like-btn,
+  .shah-btn,
+  .sett-btn {
+    height: 50px;
+    font-size: 12px;
+    padding: 0 8px;
+  }
+  .sel,
+  .sear {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  .number-div,
+  .regitration-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .season__collection {
+    flex-direction: column;
+  }
+
+  .season,
+  .collection {
+    width: 100%;
+    height: auto;
+    padding: 60px 15px;
+  }
+
+  .s-card {
+    width: 200px;
+    height: auto;
+  }
+
+  .s-card-img-div {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .nav2-desc {
+    flex-direction: column;
+    align-items: center;
+  }
+  .like-btn,
+  .shah-btn,
+  .sett-btn {
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    font-size: 12px;
+  }
+  .sel,
+  .sear {
+    width: 18px;
+    height: 18px;
+  }
+  .season,
+  .collection {
+    padding: 40px 10px;
+  }
+
+  .season-title,
+  .collection-title {
+    font-size: 28px;
+  }
+
+  .collection-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .section {
+    width: 100%;
+    padding: 10px;
+  }
+  .newcollection-wrapper {
+    gap: 30px;
+  }
+
+  .card-img {
+    width: 100%;
+    /* height: 100px; */
+  }
+
+  .s-card-img-div {
+    width: 170px;
+  }
+  .footer-h2 {
+    font-size: 28px;
+  }
+  .footer-wrapper {
+    flex-direction: column; /* Mobil ekranda rasm va elementlar pastma-past joylashadi */
+    gap: 15px;
+  }
+  .footer-img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 625px) {
+  .season {
+    padding: 20px;
+  }
+  /* .container-full {
+    padding: 20px;
+  } */
+}
+
+@media (max-width: 615px) {
+  .s-card-img-div {
+    width: 120px;
+  }
+  .newcollection-wrapper {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 555px) {
+  .s-card-img-div {
+    width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .like-btn,
+  .shah-btn,
+  .sett-btn {
+    height: 40px;
+    font-size: 10px;
+  }
+  .sel,
+  .sear {
+    display: none;
+  }
+  .nav1 {
+    flex-direction: column;
+  }
+  .nav2 {
+    flex-direction: column;
+  }
+  .season,
+  .collection {
+    padding: 30px 5px;
+  }
+
+  .season-title,
+  .collection-title {
+    font-size: 22px;
+  }
+
+  .s-card {
+    width: 180px;
+  }
+
+  .s-card-img-div {
+    width: 140px;
+    height: 170px;
+  }
+
+  .collection-btn {
+    width: 110px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 930px) {
+  /* .collection2018 {
+    gap: 50px;
+  } */
+  .s-card-img-div {
+    max-width: 180px;
+  }
+  .card-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.container,
+.container-full {
+  max-width: 100%;
+  /* padding: 0 15px; */
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .season__collection,
+  .collection2018 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .season,
+  .collection {
+    width: 100%;
+  }
+
+  .collection2018-desc,
+  .costum {
+    width: 100%;
+    height: auto;
+  }
+
+  .collection2018 {
+    flex-direction: column;
+  }
+
+  .collection-btn {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .newcollection-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .porten-p {
+    width: 90%;
+  }
+
+  .s-card {
+    max-width: 180px;
+  }
+
+  .newcollection-wrapper {
+    gap: 20px;
+  }
+
+  .collection2018-text {
+    width: 80%;
+  }
+
+  .collection2018-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .porten-adress {
+    width: 250px;
+    height: 250px;
+    padding: 80px 0;
+  }
+
+  .porten-p {
+    font-size: 14px;
+  }
+
+  .s-card {
+    max-width: 160px;
+  }
+
+  .newcollection-title {
+    font-size: 30px;
+  }
+
+  .newcollection-wrapper {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .collection2018-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .porten-adress {
+    width: 200px;
+    height: 200px;
+    padding: 60px 0;
+  }
+
+  .porten-p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .season-title,
+  .collection-title,
+  .newcollection-title {
+    font-size: 24px;
+  }
+
+  .collection-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .s-card {
+    max-width: 140px;
+  }
+
+  .collection2018-text {
+    font-size: 12px;
+  }
+
+  .collection2018-btn {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  section {
+    height: 700px;
+    padding: 100px 15px;
+  }
+
+  .porten-p {
+    font-size: 14px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    height: 600px;
+    padding: 80px 10px;
+  }
+
+  .porten-adress {
+    width: 280px;
+    height: 280px;
+    padding: 60px 0;
+  }
+
+  .porten-p {
+    font-size: 13px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    height: 500px;
+    padding: 60px 10px;
+    /* background-size: contain; */
+  }
+
+  .porten-adress {
+    width: 240px;
+    height: 240px;
+    padding: 50px 0;
+  }
+
+  .porten-h3 {
+    font-size: 18px;
+  }
+
+  .porten-p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    height: 400px;
+    padding: 50px 5px;
+  }
+
+  .porten-adress {
+    width: 200px;
+    height: 200px;
+    padding: 40px 0;
+  }
+
+  .porten-h3 {
+    font-size: 16px;
+  }
+
+  .porten-p {
+    font-size: 11px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .newcollection-wrapper {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-h2 {
+    font-size: 24px;
+  }
+  .footer-wrapper {
+    gap: 10px;
+  }
+  .footer-img {
+    width: 70px;
+  }
 }
